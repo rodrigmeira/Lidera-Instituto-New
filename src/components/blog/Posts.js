@@ -107,7 +107,6 @@ const Posts = ({ className, itemsPerPage, archive = false, params }) => {
                         onPageChange={handlePageClick}
                         pageRangeDisplayed={3}
                         marginPagesDisplayed={2}
-                        pageCount={pageCount}
                         previousLabel="Anterior"
                         pageClassName="page-item"
                         pageLinkClassName="page-link"

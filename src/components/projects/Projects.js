@@ -91,7 +91,6 @@ const Projects = ({ className, itemsPerPage }) => {
                         onPageChange={handlePageClick}
                         pageRangeDisplayed={3}
                         marginPagesDisplayed={2}
-                        pageCount={pageCount}
                         previousLabel="Voltar"
                         pageClassName="page-item"
                         pageLinkClassName="page-link"
