@@ -45,7 +45,11 @@ const Post = defineDocumentType(() => ({
       url:{
           type: "string",
           resolve: (doc) => `/${doc._raw.flattenedPath}`,
-      }
+      },
+      slug: {
+        type: "string",
+        resolve: (doc) => doc._raw.flattenedPath.replace("blog/", ""),
+      },
   }
 }));
 
@@ -99,14 +103,18 @@ const Project = defineDocumentType(() => ({
       type: "string",
       description: "The year of the project",
       required: true,
-    }
+    },
   },
   computedFields: {
-      url:{
-          type: "string",
-          resolve: (doc) => `/${doc._raw.flattenedPath}`,
-      }
-  }
+    url: {
+      type: "string",
+      resolve: (doc) => `/${doc._raw.flattenedPath}`,
+    },
+    slug: {
+      type: "string",
+      resolve: (doc) => doc._raw.flattenedPath.replace("projects/", ""),
+    },
+  },
 }));
 
 export default makeSource({

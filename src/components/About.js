@@ -7,14 +7,14 @@ import { Label } from "@headlessui/react";
 
 const aboutContent = {
   heading: {
-    title: "Conheça o Instituto Lidera",
+    title: "Conheça a Vinci",
     subtitle: "Sobre Nós",
   },
   content: {
     img: "/img-square-2-min",
     title: "Liderando Transformações para uma Gestão Pública Eficiente",
     description:
-      "O Lidera Instituto transforma a gestão pública ao qualificar profissionais da Educação e da Saúde, promovendo eficiência e humanização nos serviços. Oferecemos soluções inovadoras para atender às necessidades reais dos municípios.",
+      "A Vinci transforma a gestão pública ao qualificar profissionais da Educação e da Saúde, promovendo eficiência e humanização nos serviços. Oferecemos soluções inovadoras para atender às necessidades reais dos municípios.",
     btn: {
       href: "/about",
       label: "Conheça mais",
@@ -44,7 +44,7 @@ const About = ({ className }) => {
                 transition: { delay: 0.2, duration: 0.5 },
               }}
               viewport={{ once: true }}
-              className="uppercase tracking-[3px] text-[12.5px] mb-5 inline-block text-blue-600 bg-blue-200 px-3 py-1.5 rounded-md"
+              className="uppercase tracking-[3px] text-[12.5px] mb-5 inline-block text-yellow-600 bg-yellow-200/30 px-3 py-1.5 rounded-md"
             >
               
               {aboutContent.heading.subtitle}
@@ -135,7 +135,7 @@ const About = ({ className }) => {
               >
                 <Link
                   href='/about'
-                  className="trannsition-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase bg-blue-600 py-4 px-5 text-white inline-block hover:bg-white hover:text-blue-600 hover:shadow-2xl"
+                  className="trannsition-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase bg-yellow-600 py-4 px-5 text-white inline-block hover:bg-white hover:text-yellow-600 hover:shadow-2xl"
                 >
                   {aboutContent.content.btn.label}
                 </Link>

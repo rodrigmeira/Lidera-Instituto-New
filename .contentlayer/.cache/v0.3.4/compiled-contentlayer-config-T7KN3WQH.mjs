@@ -45,6 +45,10 @@ var Post = defineDocumentType(() => ({
     url: {
       type: "string",
       resolve: (doc) => `/${doc._raw.flattenedPath}`
+    },
+    slug: {
+      type: "string",
+      resolve: (doc) => doc._raw.flattenedPath.replace("blog/", "")
     }
   }
 }));
@@ -103,6 +107,10 @@ var Project = defineDocumentType(() => ({
     url: {
       type: "string",
       resolve: (doc) => `/${doc._raw.flattenedPath}`
+    },
+    slug: {
+      type: "string",
+      resolve: (doc) => doc._raw.flattenedPath.replace("projects/", "")
     }
   }
 }));
@@ -113,4 +121,4 @@ var contentlayer_config_default = makeSource({
 export {
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-MXRZCP6N.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-T7KN3WQH.mjs.map

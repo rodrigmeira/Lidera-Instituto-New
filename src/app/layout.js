@@ -9,7 +9,7 @@ const poppins = Poppins({
 })
 
 export const metadata = {
-  title: "Lidera Instituto",
+  title: "Vinci",
   description: "Transformando a gestao publica ao qualificar profissionais da educacao e saude",
 };
 

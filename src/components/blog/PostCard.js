@@ -39,7 +39,7 @@ const PostCard = ({ post, index }) => {
                     </Link>
                 </h3>
                 <p>
-                    <Link className="text-[12px] tracking-[2px] uppercase border-b-2 pb-2 inline-block border-blue-600" href={post.url}>
+                    <Link className="text-[12px] tracking-[2px] uppercase border-b-2 pb-2 inline-block border-yellow-600" href={post.url}>
                         Leia mais
                     </Link>
                 </p>

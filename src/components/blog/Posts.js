@@ -44,7 +44,7 @@ const Items = ({ currentItems }) => {
                                     </Link>
                                 </h3>
                                 <p>
-                                    <Link href={post.url} className="text-[12px] tracking-[2px] uppercase border-b-2 pb-2 inline-block border-blue-600">
+                                    <Link href={post.url} className="text-[12px] tracking-[2px] uppercase border-b-2 pb-2 inline-block border-yellow-600">
                                         Leia mais
                                     </Link>
                                 </p>
@@ -102,7 +102,7 @@ const Posts = ({ className, itemsPerPage, archive = false, params }) => {
                 </div>
 
                 <div className="lg:w-10/12 mx-auto flex flex-wrap">
-                    <ReactPaginate
+                    {/* <ReactPaginate
                         nextLabel="Próximo"
                         onPageChange={handlePageClick}
                         pageRangeDisplayed={3}
@@ -120,7 +120,7 @@ const Posts = ({ className, itemsPerPage, archive = false, params }) => {
                         containerClassName="pagination"
                         activeClassName="active"
                         renderOnZeroPageCount={null}
-                    />
+                    /> */}
                 </div>
             </div>
         </section>

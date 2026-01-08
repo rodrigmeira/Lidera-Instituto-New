@@ -25,14 +25,14 @@ const testimonialContent = {
       name: "Mariana Silva",
       titleRole: "Gerente de Marketing",
       quote:
-        "A experiência com o Lidera Instituto foi única. Os conteúdos são claros e aplicáveis no dia a dia, e os professores são extremamente qualificados. Minha equipe já sente a diferença na minha forma de liderar.",
+        "A experiência com a Vinci foi única. Os conteúdos são claros e aplicáveis no dia a dia, e os professores são extremamente qualificados. Minha equipe já sente a diferença na minha forma de liderar.",
     },
     {
       img: "/person-3-min.jpg",
       name: "Carlos Eduardo",
       titleRole: "Diretor de Recursos Humanos",
       quote:
-        "Participar dos treinamentos do Lidera foi um divisor de águas na minha carreira profissional. Os métodos são modernos e voltados para o mundo real. Estou colhendo os frutos dessa evolução profissional!",
+        "Participar dos treinamentos da Vinci foi um divisor de águas na minha carreira profissional. Os métodos são modernos e voltados para o mundo real. Estou colhendo os frutos dessa evolução profissional!",
     },
   ],
 };
@@ -72,7 +72,7 @@ const Testimonials = ({ className }) => {
                     transition: { delay: 0.2, duration: 0.5 },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[3px] text-[12.5px] mb-5 inline-block text-blue-500 bg-blue-200 px-3 py-1.5 rounded-md"
+                  className="uppercase tracking-[3px] text-[12.5px] mb-5 inline-block text-yellow-500 bg-yellow-200/30 px-3 py-1.5 rounded-md"
                 >
                   {testimonialContent.heading.subtitle}
                 </motion.span>
@@ -129,7 +129,7 @@ const Testimonials = ({ className }) => {
                     <div className="md:w-8/12 p-7 md:p-16 flex items-center">
                       <div>
                         <blockquote className="text-lg mb-7">
-                          <span className="text-[200px] leading-[0] relative text-blue-600 block">
+                          <span className="text-[200px] leading-[0] relative text-yellow-600 block">
                             &ldquo;
                           </span>
                           {testimonials.quote}
@@ -164,7 +164,7 @@ const Testimonials = ({ className }) => {
               className={`${
                 isBeginning == true
                   ? "opacity-30 bg-gray-300 text-gray-600 !cursor-pointer"
-                  : "opacity-100 bg-blue-600 text-white"
+                  : "opacity-100 bg-yellow-600 text-white"
               } relative top-0 group transition-all duration-300 ease-in-out w-12 h-12 cursor-pointer rounded-full inline-flex justify-center items-center`}
             >
               <BiChevronLeft
@@ -181,7 +181,7 @@ const Testimonials = ({ className }) => {
               className={`${
                 isEnd == true
                   ? "opacity-30 bg-gray-300 text-gray-600 !cursor-pointer"
-                  : "opacity-100 bg-blue-600 text-white"
+                  : "opacity-100 bg-yellow-600 text-white"
               } relative top-0 group transition-all duration-300 ease-in-out w-12 h-12 cursor-pointer rounded-full inline-flex justify-center items-center`}
             >
               <BiChevronRight

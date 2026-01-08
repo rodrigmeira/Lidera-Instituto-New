@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const aboutContent = {
   heading: {
-    title: "Conheça o Instituto Lidera",
+    title: "Conheça a Vinci",
     subTitle: "Sobre Nós",
   },
 };
@@ -35,7 +35,7 @@ const Hero = ({ className, title, subTitle }) => {
                   transition: { delay: 0.03, duration: 0.5 },
                 }}
                 viewport={{ once: true }}
-                className="uppercase tracking-[3px] text-[12.5px] mb-5 inline-block text-blue-500 bg-blue-200 px-3 py-1.5 rounded-md"
+                className="uppercase tracking-[3px] text-[12.5px] mb-5 inline-block text-yellow-500 bg-yellow-200/30 px-3 py-1.5 rounded-md"
               >{subTitle}</motion.span>
             )}
 

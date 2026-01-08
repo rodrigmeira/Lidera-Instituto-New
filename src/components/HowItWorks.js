@@ -4,27 +4,28 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   BiHardHat,
-  BiPaintRoll,
-  BiNote,
   BiBulb,
   BiLayer,
   BiOutline,
+  BiBook,
+  BiBriefcase,
+  BiCertification,
 } from "react-icons/bi";
 
 const howItWorksContent = {
   heading: {
-    title: "Entenda Porque Nossa Solução Funciona",
-    subtitle: "Como Funciona",
+    title: "Nossas Áreas de Atuação",
+    subtitle: "Serviços",
     description:
-      "Combinamos inovação, expertise e personalização para criar soluções que atendem às reais necessidades dos municípios. Nossa abordagem prática e focada no potencial humano garante resultados eficientes e transformadores.",
+      "Atuamos em três frentes principais para transformar a gestão pública e privada, oferecendo soluções completas em educação e consultoria. Nossa abordagem integra conhecimento prático e estratégico.",
   },
   steps: [
     {
       number: "01",
-      icon: BiHardHat,
-      title: "Diagnóstico Personalizado",
+      icon: BiBook,
+      title: "Formações Educacionais",
       description:
-        "Realizamos uma análise detalhada das necessidades específicas do município, identificando os principais desafios e oportunidades nas áreas de Educação e Saúde.",
+        "Capacitação contínua para educadores e gestores, visando a melhoria da qualidade do ensino e a atualização de práticas pedagógicas com metodologias ativas e inovadoras.",
       btn: {
         href: "#",
         label: "Saiba Mais",
@@ -32,10 +33,10 @@ const howItWorksContent = {
     },
     {
       number: "02",
-      icon: BiPaintRoll,
-      title: "Planejamento Estratégico",
+      icon: BiBriefcase,
+      title: "Assessorias e Consultorias Empresariais",
       description:
-        "Desenvolvemos soluções sob medida com base nos dados coletados, criando planos de ação eficientes que priorizam a melhoria da gestão e o impacto social.",
+        "Suporte estratégico para empresas e órgãos públicos, focando em otimização de processos, gestão eficiente, conformidade legal e alcance de resultados sustentáveis.",
       btn: {
         href: "#",
         label: "Saiba Mais",
@@ -43,10 +44,10 @@ const howItWorksContent = {
     },
     {
       number: "03",
-      icon: BiNote,
-      title: "Implementação e Acompanhamento",
+      icon: BiCertification,
+      title: "Cursos e Momentos Formativos",
       description:
-        "Aplicamos as estratégias planejadas e acompanhamos de perto os resultados, garantindo a adaptação contínua e o sucesso das iniciativas realizadas.",
+        "Workshops, palestras e treinamentos práticos desenvolvidos sob medida para desenvolver competências específicas, soft skills e promover o crescimento profissional das equipes.",
       btn: {
         href: "#",
         label: "Saiba Mais",
@@ -168,13 +169,13 @@ const HowItWorks = ({ className }) => {
                   }}
                   viewport={{ once: true }}
                   whileHover={{ y: -10, transition: 0.1 }}
-                  className="group duration-300 pt-32 pl-10 pr-10 pb-20 bg-white relative overflow-hidden hover:bg-[#25d7fb] hover:shadow-2xl"
+                  className="group duration-300 pt-32 pl-10 pr-10 pb-20 bg-white relative overflow-hidden hover:bg-[#D29F46] hover:shadow-2xl"
                 >
                   <span className="text-[200px] inline-block z-[1] font-semibold absolute -top-[120px] opacity-5 left-0 leading-0">
                     {step.number}
                   </span>
                   <div className="absolute top-10 right-10">
-                    <span className="text-3xl text-blue-600 duration-300 transition-all ease-in-out group-hover:text-white">
+                    <span className="text-3xl text-yellow-600 duration-300 transition-all ease-in-out group-hover:text-white">
                       <step.icon />
                     </span>
                   </div>
@@ -192,7 +193,7 @@ const HowItWorks = ({ className }) => {
                       <p>
                         <Link
                           href={step.btn.href}
-                          className="text-[12px] tracking-[2px] uppercase border-b-2 pb-2 inline-block border-blue-600 duration-300 transition-all ease-in-out group-hover:border-white group-hover:text-white"
+                          className="text-[12px] tracking-[2px] uppercase border-b-2 pb-2 inline-block border-yellow-600 duration-300 transition-all ease-in-out group-hover:border-white group-hover:text-white"
                         >
                           {step.btn.label}
                         </Link>
@@ -205,7 +206,7 @@ const HowItWorks = ({ className }) => {
           </div>
         </div>
       </section>
-      <section className="pt-72 lg:pt-60 pb-32 bg-blue-600">
+      <section className="pt-72 lg:pt-60 pb-32 bg-yellow-600">
         <div className="container mx-auto px-4">
           <div className="lg:flex justify-center">
             <div className="w-full lg:w-8/12 flex gap-0 items-center">

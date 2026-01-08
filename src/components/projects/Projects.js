@@ -85,8 +85,8 @@ const Projects = ({ className, itemsPerPage }) => {
                     <Items currentItems={currentItems} />
                 </div>
 
-                <div className="lg:w-10/12 mx-auto flex flex-wrap">
-                    <ReactPaginate
+                <div className="lg:w-10/12 mx-auto flex flex-wrap relative z-10">
+                    {/* <ReactPaginate
                         nextLabel="Próximo"
                         onPageChange={handlePageClick}
                         pageRangeDisplayed={3}
@@ -94,9 +94,9 @@ const Projects = ({ className, itemsPerPage }) => {
                         previousLabel="Voltar"
                         pageClassName="page-item"
                         pageLinkClassName="page-link"
-                        previousClassName="page-item"
+                        previousClassName="page-item previous"
                         previousLinkClassName="page-link"
-                        nextClassName="page-item"
+                        nextClassName="page-item next"
                         nextLinkClassName="page-link"
                         breakLabel="..."
                         breakClassName="page-item"
@@ -104,7 +104,7 @@ const Projects = ({ className, itemsPerPage }) => {
                         containerClassName="pagination"
                         activeClassName="active"
                         renderOnZeroPageCount={null}
-                    />
+                    /> */}
                 </div>
             </div>
         </section>

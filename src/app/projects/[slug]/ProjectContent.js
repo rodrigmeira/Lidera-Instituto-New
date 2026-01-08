@@ -53,15 +53,15 @@ const ProjectContent = ({ project }) => {
                 <article className='prose mx-auto max-w-2xl'>
                     <div className='mx-auto max-w-2xl mb-10'>
                         <div className='flex justify-between'>
-                            <div className="border-l border-gray-200 relative pl-3 before:content-[''] before:top-0 before:left-[1px] before:absolute before:h-7 before:w-[1px] before:bg-blue-600">
+                            <div className="border-l border-gray-200 relative pl-3 before:content-[''] before:top-0 before:left-[1px] before:absolute before:h-7 before:w-[1px] before:bg-yellow-600">
                                 <span className='block text-gray-400'>Cliente</span>
                                 <span>{project.client}</span>
                             </div>
-                            <div className="border-l border-gray-200 relative pl-3 before:content-[''] before:top-0 before:left-[1px] before:absolute before:h-7 before:w-[1px] before:bg-blue-600">
+                            <div className="border-l border-gray-200 relative pl-3 before:content-[''] before:top-0 before:left-[1px] before:absolute before:h-7 before:w-[1px] before:bg-yellow-600">
                                 <span className='block text-gray-400'>Ano</span>
                                 <span>{project.year}</span>
                             </div>
-                            <div className="border-l border-gray-200 relative pl-3 before:content-[''] before:top-0 before:left-[1px] before:absolute before:h-7 before:w-[1px] before:bg-blue-600">
+                            <div className="border-l border-gray-200 relative pl-3 before:content-[''] before:top-0 before:left-[1px] before:absolute before:h-7 before:w-[1px] before:bg-yellow-600">
                                 <span className='block text-gray-400'>Função</span>
                                 <span>{project.role}</span>
                             </div>
@@ -82,7 +82,7 @@ const ProjectContent = ({ project }) => {
                     }
                 </div>
                 <div className='flex justify-center mt-10'>
-                    <Link href='/projets' className='transition-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase bg-blue-600 py-4 px-5 text-white hover:bg-white hover:text-blue-600 hover:shadow-2xl'>
+                    <Link href='/projects' className='transition-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase bg-yellow-600 py-4 px-5 text-white hover:bg-white hover:text-yellow-600 hover:shadow-2xl'>
                         Ver todos
                     </Link>
                 </div>

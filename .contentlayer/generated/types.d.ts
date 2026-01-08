@@ -28,6 +28,7 @@ export type Post = {
   /** MDX file body */
   body: MDX
   url: string
+  slug: string
 }
 
 export type Project = {
@@ -52,6 +53,7 @@ export type Project = {
   /** MDX file body */
   body: MDX
   url: string
+  slug: string
 }  
 
 /** Nested types */

@@ -58,8 +58,8 @@ const Navigation = () => {
             <Image
               src="/Logo.png"
               alt="Logo"
-              width={150}
-              height={150}
+              width={100}
+              height={100}
             />
           </Link>
           <div className="flex">
@@ -68,7 +68,7 @@ const Navigation = () => {
                 <li key={menu.label}>
                   <Link
                     href={menu.href}
-                    className={`relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-blue-600 before:origin:-[100%, 50%] 
+                    className={`relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-yellow-600 before:origin:-[100%, 50%] 
                       before:transition-all before:duration-300 before:ease-in-out before:scale-x-0 before:scale-y-[1] before:scale-z-[1] before:will-change-transform 
                       hover:before:origin-[100%, 0%] hover:before:scale-x-[1] hover:before:scale-y-[1] hover:before:scale-z-[1] text-[12px] tracking-[2px] uppercase font-semibold pb-2 ${newPathname === menu.href ? "border-blue-600 before:scale-x-[1]" : "border-transparent"}`}
                   >
@@ -143,7 +143,7 @@ const Navigation = () => {
                       <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
                         <Link
                           href="/contato"
-                          className="block text-center text-[11.5px] tracking-[2px] font-bold uppercase bg-blue-600 py-4 px-5 text-white"
+                          className="block text-center text-[11.5px] tracking-[2px] font-bold uppercase bg-yellow-600 py-4 px-5 text-white"
                         >
                           Entre em contato
                         </Link>

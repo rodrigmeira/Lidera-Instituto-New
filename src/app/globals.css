@@ -11,11 +11,11 @@
 }
 
 .pagination li a {
-    @apply rounded-full w-10 h-10 inline-flex items-center justify-center transition-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase bg-blue-600 py-4 px-5 text-white hover:bg-white hover:text-blue-600 hover:shadow-2xl;
+    @apply cursor-pointer rounded-full w-10 h-10 inline-flex items-center justify-center transition-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase bg-yellow-600 py-4 px-5 text-white hover:bg-white hover:text-yellow-600 hover:shadow-2xl;
 }
 
 .pagination li.active a {
-    @apply bg-white text-blue-600;
+    @apply bg-white text-yellow-600;
 }
 
 .pagination li:first-child {
@@ -27,7 +27,9 @@
 }
 
 .pagination li:first-child a,
-.pagination li:last-child a {
+.pagination li:last-child a,
+.pagination .previous a,
+.pagination .next a {
     @apply w-auto px-3 md:px-5 rounded-none;
 }
 

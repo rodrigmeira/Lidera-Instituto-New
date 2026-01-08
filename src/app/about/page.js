@@ -14,7 +14,7 @@ const page = () => {
       <WhyUs className="pt-52 pb-0" />
       <Testimonials className="pt-10 lg:pt-44 pb-10 lg:pb-32"/>
       <Team className="py-10 lg:py-32"/>
-      <Subscribe className="bg-blue-600 py-10 lg:py-32"/>
+      <Subscribe className="bg-yellow-600 py-10 lg:py-32"/>
     </>
   )
 }

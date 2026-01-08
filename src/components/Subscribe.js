@@ -8,7 +8,7 @@ const subscribeContent = {
     title: "Fique por dentro das novidades",
     subtitle: "Inscreva-se na nossa newsletter",
     description:
-      "Junte-se a nossa comunidade e fique por dentro das novidades sobre o Lidera Instituto!",
+      "Junte-se a nossa comunidade e fique por dentro das novidades sobre a Vinci!",
   },
   form: {
     placeholder: "Seu melhor e-mail",
@@ -74,7 +74,7 @@ const Subscribe = ({ className }) => {
 
             <button
               type="submit"
-              className="appearance-none absolute top-1 right-1 bg-[#25e9fb] text-white shadow-md w-12 h-12 rounded-full flex items-center justify-center"
+              className="appearance-none absolute top-1 right-1 bg-[#D29F46] text-white shadow-md w-12 h-12 rounded-full flex items-center justify-center"
             >
               <BiSolidPaperPlane />
             </button>
