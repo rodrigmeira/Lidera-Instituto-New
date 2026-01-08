@@ -112,7 +112,7 @@ const CEO = ({ className }) => {
                   viewport={{ once: true }}
                   className="text-blue-600 italic font-medium"
                 >
-                  "{ceoContent.content.quote}"
+                  &quot;{ceoContent.content.quote}&quot;
                 </motion.blockquote>
               )}
             </div>
