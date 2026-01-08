@@ -62,7 +62,7 @@ const WhyUs = ({ className }) => {
                 transition: { delay: 0.2, duration: 0.5 },
               }}
               viewport={{ once: true }}
-              className="uppercase tracking-[3px] text-[12.5px] mb-5 inline-block text-yellow-500 bg-yellow-200/30 px-3 py-1.5 rounded-md"
+              className="uppercase tracking-[3px] text-[12.5px] mb-5 inline-block text-blue-500 bg-blue-200/30 px-3 py-1.5 rounded-md"
             >
               {WhyUsContent.heading.title}
             </motion.span>
@@ -120,7 +120,7 @@ const WhyUs = ({ className }) => {
                     className="flex space-x-4 items-start mb-7"
                     key={item.title}
                   >
-                    <span className="text-xl grown-0 flex-none inline-flex justify-center items-center w-12 h-12 rounded-full relative bg-[#D29F46]/50">
+                    <span className="text-xl grown-0 flex-none inline-flex justify-center items-center w-12 h-12 rounded-full relative bg-[#061F3D]/50">
                       {<item.icon className="z-20 relative text-white" />}
                     </span>
                     <div>

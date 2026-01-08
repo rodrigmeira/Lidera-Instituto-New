@@ -34,6 +34,14 @@ const footerContent = {
         { href: "#", label: "Guia" },
       ],
     },
+    {
+      heading: "Contato Institucional",
+      links: [
+        { href: "#", label: "Rua do Brum, 248 – Centro Histórico do Recife Empresarial Hub Plural" },
+        { href: "#", label: "WhatsApp: (81) 99406-2092" },
+        { href: "#", label: "Instagram: @vinci.inteligencia" },
+      ]
+    }
   ],
 };
 
@@ -41,7 +49,7 @@ const CopyRight = () => {
     return (
         <div className="pt-7 mt-7 md:mt-14 md:pt-14 border-t border-t-gray-100 text-center text-gray-500">
             <p className="text-center items-center mx-auto text-sm">
-                &copy; {new Date().getFullYear()} <span className="font-semibold text-yellow-600">Vinci</span>. Todos os direitos reservados
+                &copy; {new Date().getFullYear()} <span className="font-semibold text-blue-600">Vinci</span>. Todos os direitos reservados
             </p>
         </div>
     )
@@ -59,7 +67,7 @@ const Footer = ({ className }) => {
           </div>
 
           <div className="md:w-8/12">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
               {footerContent.footerLinks.map((item, idx) => (
                 <div className="mb-10 md:mb-0" key={item.heading}>
                   <h3 className="text-gray-800 mb-3">{item.heading}</h3>
@@ -70,13 +78,13 @@ const Footer = ({ className }) => {
                           href={link.href}
                           className={`${
                             link.badge ? "flex gap-2 items-center" : ""
-                          } text-gray-500 duration-300 transition-all ease-in-out hover:text-yellow-600
+                          } text-gray-500 duration-300 transition-all ease-in-out hover:text-blue-600
                                     `}
                         >
                           {link.badge ? (
                             <>
                               <span>{link.label}</span>
-                              <span className="py-0.5 px-2 rounded-full bg-yellow-100 text-[10px] text-yellow-600 font-semibold">
+                              <span className="py-0.5 px-2 rounded-full bg-blue-100 text-[10px] text-blue-600 font-semibold">
                                 {link.badge}
                               </span>
                             </>

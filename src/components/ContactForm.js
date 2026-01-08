@@ -62,7 +62,7 @@ const ContactForm = ({ className }) => {
                                     <textarea name="" id="message" cols="30" rows="7" className="rounded-0 appearance-none !text-base p-2 outline-1 mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-orange-600 focus:ring-orange-600 block w-full sm:text-sm focus:ring-1 outline-gray-300"/>
                                 </div>
                                 <div className="block mb-6">
-                                    <input type="submit" className="cursor-pointer w-full block transition-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase bg-yellow-600 py-4 px-5 text-white hover:bg-white hover:text-orange-600 hover:shadow-2xl" value="Enviar mensagem"/>
+                                    <input type="submit" className="cursor-pointer w-full block transition-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase bg-blue-600 py-4 px-5 text-white hover:bg-white hover:text-orange-600 hover:shadow-2xl" value="Enviar mensagem"/>
                                 </div>
                         </form>
                     </div>

@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import {
   BiHardHat,
   BiBulb,
-  BiLayer,
   BiOutline,
   BiBook,
   BiBriefcase,
@@ -23,9 +22,9 @@ const howItWorksContent = {
     {
       number: "01",
       icon: BiBook,
-      title: "Formações Educacionais",
+      title: "Educação Pública",
       description:
-        "Capacitação contínua para educadores e gestores, visando a melhoria da qualidade do ensino e a atualização de práticas pedagógicas com metodologias ativas e inovadoras.",
+        "Formação continuada de professores e gestores, Abertura do Ano Letivo, Capacitação de equipes pedagógicas, Desenvolvimento de lideranças educacionais, Projetos educacionais estruturantes.",
       btn: {
         href: "#",
         label: "Saiba Mais",
@@ -34,9 +33,9 @@ const howItWorksContent = {
     {
       number: "02",
       icon: BiBriefcase,
-      title: "Assessorias e Consultorias Empresariais",
+      title: "Assistência Social",
       description:
-        "Suporte estratégico para empresas e órgãos públicos, focando em otimização de processos, gestão eficiente, conformidade legal e alcance de resultados sustentáveis.",
+        "Cursos de qualificação profissional para usuários, Formação de equipes técnicas (SUAS), Oficinas socioeducativas, Projetos de fortalecimento de vínculos, Desenvolvimento humano para inclusão produtiva.",
       btn: {
         href: "#",
         label: "Saiba Mais",
@@ -45,9 +44,9 @@ const howItWorksContent = {
     {
       number: "03",
       icon: BiCertification,
-      title: "Cursos e Momentos Formativos",
+      title: "Saúde",
       description:
-        "Workshops, palestras e treinamentos práticos desenvolvidos sob medida para desenvolver competências específicas, soft skills e promover o crescimento profissional das equipes.",
+        "Formação humanizada para equipes de saúde, Comunicação, empatia e atendimento ao público, Desenvolvimento comportamental e emocional.",
       btn: {
         href: "#",
         label: "Saiba Mais",
@@ -57,9 +56,9 @@ const howItWorksContent = {
   features: [
     {
       icon: BiHardHat,
-      title: "Soluções Personalizadas",
+      title: "Consultoria Técnica Especializada",
       description:
-        "Desenvolvemos soluções sob medida com base nos dados coletados, criando planos de ação eficientes que priorizam a melhoria da gestão e o impacto social.",
+        "Diagnóstico institucional e humano, Planejamento estratégico educacional, Desenvolvimento de equipes e lideranças, Acompanhamento técnico e pedagógico. Consultoria que sai do papel e chega na prática.",
       btn: {
         href: "#",
         label: "Saiba Mais",
@@ -67,9 +66,9 @@ const howItWorksContent = {
     },
     {
       icon: BiBulb,
-      title: "Equipe Especializada",
+      title: "Programas e Metodologias Exclusivas",
       description:
-        "Contamos com profissionais qualificados e experientes, comprometidos em entregar resultados concretos e impactantes para a gestão pública.",
+        "A Vinci desenvolve Programas próprios, com metodologias aplicadas e adaptáveis à realidade local, como: Educação Singular, Comunica+. Esses programas unem conteúdo, prática, comportamento e gestão.",
       btn: {
         href: "#",
         label: "Saiba Mais",
@@ -77,19 +76,9 @@ const howItWorksContent = {
     },
     {
       icon: BiOutline,
-      title: "Tecnologia Inovadora",
+      title: "Eventos Institucionais",
       description:
-        "Utilizamos ferramentas modernas e práticas baseadas em dados para garantir que as soluções sejam precisas e eficientes nos municípios.",
-      btn: {
-        href: "#",
-        label: "Saiba Mais",
-      },
-    },
-    {
-      icon: BiLayer,
-      title: "Acompanhamento Contínuo",
-      description:
-        "Monitoramos os resultados e oferecemos suporte constante para assegurar que os objetivos sejam alcançados com excelência e eficácia.",
+        "Planejamento e execução de: Conferências, Congressos, Encontros institucionais, Workshops e seminários. Eventos pensados como ferramentas de transformação, não apenas cerimônias.",
       btn: {
         href: "#",
         label: "Saiba Mais",
@@ -169,13 +158,13 @@ const HowItWorks = ({ className }) => {
                   }}
                   viewport={{ once: true }}
                   whileHover={{ y: -10, transition: 0.1 }}
-                  className="group duration-300 pt-32 pl-10 pr-10 pb-20 bg-white relative overflow-hidden hover:bg-[#D29F46] hover:shadow-2xl"
+                  className="group duration-300 pt-32 pl-10 pr-10 pb-20 bg-white relative overflow-hidden hover:bg-[#061F3D] hover:shadow-2xl"
                 >
-                  <span className="text-[200px] inline-block z-[1] font-semibold absolute -top-[120px] opacity-5 left-0 leading-0">
+                  <span className="text-[200px] inline-block z-[1] group-hover:text-white font-semibold absolute -top-[120px] opacity-5 left-0 leading-0">
                     {step.number}
                   </span>
                   <div className="absolute top-10 right-10">
-                    <span className="text-3xl text-yellow-600 duration-300 transition-all ease-in-out group-hover:text-white">
+                    <span className="text-3xl text-blue-600 duration-300 transition-all ease-in-out group-hover:text-white">
                       <step.icon />
                     </span>
                   </div>
@@ -193,7 +182,7 @@ const HowItWorks = ({ className }) => {
                       <p>
                         <Link
                           href={step.btn.href}
-                          className="text-[12px] tracking-[2px] uppercase border-b-2 pb-2 inline-block border-yellow-600 duration-300 transition-all ease-in-out group-hover:border-white group-hover:text-white"
+                          className="text-[12px] tracking-[2px] uppercase border-b-2 pb-2 inline-block border-blue-600 duration-300 transition-all ease-in-out group-hover:border-white group-hover:text-white"
                         >
                           {step.btn.label}
                         </Link>
@@ -206,7 +195,7 @@ const HowItWorks = ({ className }) => {
           </div>
         </div>
       </section>
-      <section className="pt-72 lg:pt-60 pb-32 bg-yellow-600">
+      <section className="pt-72 lg:pt-60 pb-32 bg-blue-600">
         <div className="container mx-auto px-4">
           <div className="lg:flex justify-center">
             <div className="w-full lg:w-8/12 flex gap-0 items-center">

@@ -74,7 +74,7 @@ const Subscribe = ({ className }) => {
 
             <button
               type="submit"
-              className="appearance-none absolute top-1 right-1 bg-[#D29F46] text-white shadow-md w-12 h-12 rounded-full flex items-center justify-center"
+              className="appearance-none absolute top-1 right-1 bg-[#061F3D] text-white shadow-md w-12 h-12 rounded-full flex items-center justify-center"
             >
               <BiSolidPaperPlane />
             </button>

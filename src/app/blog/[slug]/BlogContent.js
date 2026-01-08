@@ -78,7 +78,7 @@ const BlogContent = ({ post }) => {
                     </div>
 
                     <div className='flex justify-center mt-10'>
-                        <Link href="/blog" className='transition-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase bg-yellow-600 py-4 px-5 text-white hover:bg-white hover:text-blue-600 hover:shadow-2xl'>
+                        <Link href="/blog" className='transition-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase bg-blue-600 py-4 px-5 text-white hover:bg-white hover:text-blue-600 hover:shadow-2xl'>
                             Ver todos os posts
                         </Link>
                     </div>

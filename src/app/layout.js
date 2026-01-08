@@ -11,6 +11,9 @@ const poppins = Poppins({
 export const metadata = {
   title: "Vinci",
   description: "Transformando a gestao publica ao qualificar profissionais da educacao e saude",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {

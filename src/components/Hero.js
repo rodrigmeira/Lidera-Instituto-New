@@ -8,14 +8,13 @@ import HeroImg from "/public/hero-img-1-min.jpg";
 
 const heroContent = {
   intro: {
-    title:
-      "Soluções Estratégicas para Transformar Gestão Pública e Privada",
-    subtitle: "Vinci",
+    title: "Inteligência em Pessoas",
+    subtitle: "VINCI",
     description:
-      "Transformamos a gestão pública ao qualificar profissionais da Educação e Saúde, promovendo serviços mais eficientes, humanos e soluções personalizadas que impactam positivamente os cidadãos e inovam processos municipais.",
+      "Educação estratégica aplicada ao desenvolvimento humano e institucional. Desenvolvemos pessoas. Transformamos resultados. Fortalecemos a gestão pública. Pessoas bem desenvolvidas constroem políticas públicas mais eficientes.",
     btn: {
-      href: "/projetos",
-      label: "Conheça nossos projetos",
+      href: "/about",
+      label: "Saiba mais",
     },
   },
 };
@@ -87,7 +86,7 @@ const Hero = ({ className }) => {
               >
                 <Link
                   href={heroContent.intro.btn.href}
-                  className="trannsition-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase bg-yellow-600 py-4 px-5 text-white inline-block hover:bg-white hover:text-yellow-600 hover:shadow-2xl"
+                  className="trannsition-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase bg-blue-600 py-4 px-5 text-white inline-block hover:bg-white hover:text-blue-600 hover:shadow-2xl"
                 >
                   {heroContent.intro.btn.label}
                 </Link>
