@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { allProjects } from "contentlayer/generated";
 import { compareDesc } from "date-fns";
-import ReactPaginate from "react-paginate";
+import Pagination from "../Pagination";
 
 import { motion } from "framer-motion";
 
@@ -91,28 +91,10 @@ const Projects = ({ className, itemsPerPage }) => {
                 </div>
 
                 <div className="lg:w-10/12 mx-auto flex flex-wrap justify-center relative z-10">
-                    <ReactPaginate
-                        nextLabel="Próximo"
-                        onPageChange={handlePageClick}
-                        pageRangeDisplayed={3}
-                        marginPagesDisplayed={2}
-                        previousLabel="Voltar"
-                        pageClassName="block"
-                        pageLinkClassName="cursor-pointer rounded-full w-10 h-10 flex items-center justify-center transition-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase bg-blue-600 text-white hover:bg-white hover:text-blue-600 hover:shadow-2xl"
-                        previousClassName="block"
-                        previousLinkClassName="w-auto px-3 md:px-5 rounded-none cursor-pointer flex items-center justify-center transition-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase bg-blue-600 py-4 text-white hover:bg-white hover:text-blue-600 hover:shadow-2xl"
-                        nextClassName="block"
-                        nextLinkClassName="w-auto px-3 md:px-5 rounded-none cursor-pointer flex items-center justify-center transition-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase bg-blue-600 py-4 text-white hover:bg-white hover:text-blue-600 hover:shadow-2xl"
-                        breakLabel="..."
-                        breakClassName="block"
-                        breakLinkClassName="cursor-pointer rounded-full w-10 h-10 flex items-center justify-center text-gray-500"
-                        containerClassName="flex flex-wrap justify-center items-center gap-2"
-                        activeClassName=""
-                        activeLinkClassName="!bg-white !text-blue-600 shadow-2xl"
-                        disabledClassName="opacity-50"
-                        disabledLinkClassName="!bg-gray-300 !text-gray-500 cursor-not-allowed hover:bg-gray-300 hover:text-gray-500 hover:shadow-none"
+                    <Pagination
                         pageCount={pageCount}
-                        renderOnZeroPageCount={null}
+                        onPageChange={handlePageClick}
+                        currentPage={Math.round(itemOffset / itemsPerPage)}
                     />
                 </div>
             </div>
