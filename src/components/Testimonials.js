@@ -89,17 +89,17 @@ const Testimonials = ({ className }) => {
                 transition: { delay: 0.2 + index * 0.1, duration: 0.5 },
               }}
               viewport={{ once: true }}
-              className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center border border-gray-100"
+              className="bg-white p-8 rounded-none shadow-none hover:bg-[#061F3D] transition-all duration-300 text-center group"
             >
               <div className="flex justify-center mb-6">
-                <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 text-3xl">
+                <div className="w-16 h-16 bg-blue-50 group-hover:bg-[#082850] rounded-full flex items-center justify-center text-blue-600 text-3xl transition-colors duration-300">
                   <stat.icon />
                 </div>
               </div>
-              <h3 className="text-lg font-bold text-gray-800 mb-3">
+              <h3 className="text-lg font-bold text-gray-800 mb-3 group-hover:text-white transition-colors duration-300">
                 {stat.title}
               </h3>
-              <p className="text-gray-500 text-sm leading-relaxed">
+              <p className="text-gray-500 text-sm leading-relaxed group-hover:text-white transition-colors duration-300">
                 {stat.description}
               </p>
             </motion.div>

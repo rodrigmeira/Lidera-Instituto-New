@@ -9,10 +9,10 @@ const ceoContent = {
     subtitle: "Jô Vicente Lima",
   },
   content: {
-    img: "/person-1-min.jpg",
+    img: "/jovicente.png",
     title: "Fundadora e CEO da Vinci Inteligência em Pessoas",
     description:
-      "Empresária, gestora de pessoas, analista de perfil comportamental, especialista em neurociência do comportamento e Master Coach de Negócios, Jô Vicente construiu sua trajetória atuando diretamente com desenvolvimento humano aplicado à gestão pública. Com sólida vivência no setor público, educação governamental e projetos institucionais, acredita que não existe política pública forte sem pessoas preparadas emocionalmente, tecnicamente e estrategicamente.",
+      "Empresária, bacharela em Direito, especialista emlicitaçãoecontratos administrativos, gestora de pessoas, analista deperfilcomportamental, especialista em neurociência do comportamentoeMaster Coach de Negócios, Jô Vicente construiu sua trajetóriaatuando diretamente com desenvolvimento humano aplicadoàgestão pública. Com sólida vivência no setor público, educação governamental eprojetos institucionais, acredita que não existe política públicafortesem pessoas preparadas emocionalmente, tecnicamenteeestrategicamente.",
     quote: "Meu trabalho é desenvolver pessoas para que elas desenvolvam instituições.",
   },
 };

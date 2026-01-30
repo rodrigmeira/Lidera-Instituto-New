@@ -1,44 +1,46 @@
 "use client";
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { BiCheckShield, BiAward, BiUser, BiNavigation, BiRocket } from "react-icons/bi";
+import { BiCheckShield, BiAward, BiUser, BiNavigation, BiRocket, BiBulb } from "react-icons/bi";
 import Image from "next/image";
 
 const WhyUsContent = {
   heading: {
-    title: "Por que nos escolher?",
+    title: "CONSULTORIA TÉCNICA",
     subtitle:
-      "Transformamos desafios em soluções através de excelência e inovação.",
+      "A Vinci atua com consultoria técnica estratégica, presencial e remota, apoiando secretarias e órgãos públicos em:",
   },
   whyusItems: [
     {
+      icon: BiCheckShield,
+      title: "Diagnóstico institucional e humano",
+      description: "",
+    },
+    {
       icon: BiAward,
-      title: "Experiência Consolidada",
-      description:
-        "Mais de duas décadas no mercado, atuando em gestão pública e privada.",
+      title: "Planejamento estratégico educacional",
+      description: "",
     },
     {
       icon: BiUser,
-      title: "Equipe Especializada",
-      description:
-        "Profissionais altamente qualificados, com expertise em diversas áreas.",
-    },
-    {
-      icon: BiCheckShield,
-      title: "Soluções Personalizadas",
-      description:
-        "Cada projeto é desenhado para atender ás necessidades específicas dos clientes.",
+      title: "Desenvolvimento de equipes e lideranças",
+      description: "",
     },
     {
       icon: BiNavigation,
-      title: "Inovação e Tecnologia",
-      description: "Uso de ferramentas modernas para garantir eficiência e qualidade."
+      title: "Acompanhamento técnico e pedagógico",
+      description: "",
     },
     {
       icon: BiRocket,
-      title: "Compromisso com Resultados",
-      description: "Monitramento contínuo e impacto sustentável em todas as ações.",
-    }
+      title: "Elaboração e monitoramento de planos de ação",
+      description: "",
+    },
+    {
+      icon: BiBulb,
+      title: "Fortalecimento da gestão e da cultura organizacional",
+      description: "Consultoria que sai do papel e chega na prática.",
+    },
   ],
 };
 

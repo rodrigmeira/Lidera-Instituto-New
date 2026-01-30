@@ -2,14 +2,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import img1 from "../../../public/img-square-1-min.jpg";
-import img2 from "../../../public/img-square-2-min.jpg";
-import img3 from "../../../public/img-square-3-min.jpg";
-import img4 from "../../../public/img-square-4-min.jpg";
-import img5 from "../../../public/img-square-5-min.jpg";
+import img1 from "../../../public/activists-hugging-walking-with-trash-bags-woods.jpg";
+import img2 from "../../../public/bottom-view-women-protesting-outdoors.jpg";
+import img3 from "../../../public/front-view-women-protesting-outdoors.jpg";
+import img4 from "../../../public/group-happy-diverse-volunteers.jpg";
+import img5 from "../../../public/labor-union-members-working-together.jpg";
 
-import post1 from "../../../public/post-1-min.jpg";
-import post2 from "../../../public/post-2-min.jpg";
+import post1 from "../../../public/people-meeting-support-group.jpg";
+import post2 from "../../../public/top-view-solidarity-concept.jpg";
 
 const storyContent = {
   column1: {
@@ -75,7 +75,7 @@ const storyContent = {
     p1: "Com 21 anos de experiência, a Vinci é uma empresa dedicada a transformar o mercado público e privado por meio da educação corporativa. Acreditamos que a capacitação é o caminho para criar uma gestão mais eficiente e estratégica, tanto para órgãos públicos quanto para empresas privadas.",
     p2: "No setor público, atuamos qualificando servidores para aprimorar processos e implementar soluções inovadoras que gerem mais eficiência e impacto positivo na administração pública. No setor privado, capacitamos empresas para vender ao governo, desmistificando os processos licitatórios e ampliando suas chances de sucesso no mercado público.",
     p3: "Com quase duas décadas de atuação, somos movidos pelo propósito de facilitar o acesso a conhecimento prático e relevante, promovendo oportunidades de crescimento para nossos clientes e contribuindo para o desenvolvimento sustentável da sociedade.",
-    signature: "/Bill_Smith_Signature.svg",
+    signature: "/assinaturajo.png",
     name: "Jô Vicente",
     role: "CEO & Co-Founder",
   },

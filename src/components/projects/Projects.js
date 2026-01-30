@@ -16,7 +16,7 @@ const Items = ({ currentItems }) => {
                 index *= 0.05;
                 return (
                     <motion.div
-                        className="relative overflow-hidden w-full lg:w-6/12 p-2 group"
+                        className="bg-white relative overflow-hidden group"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{
                             opacity: 1,
@@ -31,16 +31,21 @@ const Items = ({ currentItems }) => {
                                 alt="liderainstituto.com"
                                 width={1064}
                                 height={644}
-                                className="object-cover object-center h-[400px] !max-w-full duration-300 transition-all ease-in-out group-hover:scale-[1.05]"
+                                className="object-cover object-center h-[200px] duration-300 transition-all ease-in-out group-hover:scale-[1.05]"
                             />
                         </Link>
-                        <div className="py-8 px-2">
-                            <span className="block mb-1 text-gray-500">{project.role}</span>
+                        <div className="p-8">
+                            <span className="block mb-3 text-gray-500 uppercase text-[12px] tracking-[1px]">{project.role} • {project.year}</span>
                             <h3 className="mb-4">
-                                <Link href={project.url} className="text-2xl leading-none">
+                                <Link href={project.url} className="text-lg leading-none">
                                     {project.title}
                                 </Link>
                             </h3>
+                            <p>
+                                <Link href={project.url} className="text-[12px] tracking-[2px] uppercase border-b-2 pb-2 inline-block border-blue-600">
+                                    Leia mais
+                                </Link>
+                            </p>
                         </div>
                     </motion.div>
                 )
@@ -81,12 +86,12 @@ const Projects = ({ className, itemsPerPage }) => {
     return (
         <section className={`${className}`} ref={ref}>
             <div className="container px-4 mx-auto">
-                <div className="lg:w-10/12 mx-auto flex flex-wrap mb-10">
+                <div className="lg:w-10/12 mx-auto mb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                     <Items currentItems={currentItems} />
                 </div>
 
                 <div className="lg:w-10/12 mx-auto flex flex-wrap relative z-10">
-                    {/* <ReactPaginate
+                    <ReactPaginate
                         nextLabel="Próximo"
                         onPageChange={handlePageClick}
                         pageRangeDisplayed={3}
@@ -103,8 +108,9 @@ const Projects = ({ className, itemsPerPage }) => {
                         breakLinkClassName="page-link"
                         containerClassName="pagination"
                         activeClassName="active"
+                        pageCount={pageCount}
                         renderOnZeroPageCount={null}
-                    /> */}
+                    />
                 </div>
             </div>
         </section>

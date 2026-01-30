@@ -15,7 +15,7 @@ const teamContent = {
   },
   team: [
     {
-      image: "/person-2-min.jpg",
+      image: "/jovicente.png",
       name: "Jô Vicente",
       role: "Co-Founder",
       instagram: "https://www.instagram.com",
